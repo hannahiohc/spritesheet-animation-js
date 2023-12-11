@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #fbfbfd;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 80px auto 0px auto;
+  color: #1d1d1f;
+}
+
+.show {
+  opacity: 1;
+}
+
+.hide {
+  opacity: 0;
+  display: none !important;
+}
+
+.animation-container {
+  width: 980px;
+  height: 466px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px auto 5px auto;
+}
+
+@media only screen and (max-width: 1068px) {
+  .animation-container {
+    width: 700px;
+    height: 401px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .animation-container {
+    width: 340px;
+    height: 378px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .animation-container {
+    width: 320px;
+  }
+}
+
+.image-sprite, .image-startframe, .image-fallback {
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  margin-left: -158px;
+}
+
+@media only screen and (max-width: 1068px) {
+   .image-sprite, .image-startframe, .image-fallback {
+    top: 60px;
+    margin-left: -130px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .image-sprite, .image-startframe, .image-fallback {
+    top: 40px;
+    margin-left: -120px;
+  }
+}
+
+.image-startframe, .image-fallback {
+  width: 316px;
+  height: 366px;
+  background-size: 316px 366px;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1068px) {
+  .image-startframe, .image-fallback {
+    width: 260px;
+    height: 301px;
+    background-size: 260px 301px;
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .image-startframe, .image-fallback {
+    width: 240px;
+    height: 278px;
+    background-size: 240px 278px;
+  }
+}
+
+.image-fallback {
+  display: none;
+  background-image: url(../images/apple_hanam_hero_fallback__emcreczwguc2_largetall.png);
+}
+
+@media only screen and (min-width: 1069px) and (min-height: 776px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1069px) and (min-height: 776px) and (min-resolution: 1.5dppx), only screen and (min-width: 1069px) and (min-height: 776px) and (min-resolution: 144dpi) {
+   .image-fallback {
+    background-image: url(../images/apple_hanam_hero_fallback__emcreczwguc2_largetall_2x.png);
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+   .image-fallback {
+    background-image: url(../images/apple_hanam_hero_fallback__emcreczwguc2_medium.png);
+  }
+}
+
+@media only screen and (max-width: 1068px) and (min-width: 735px) and (min-height: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-width: 735px) and (min-height: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-width: 735px) and (min-height: 734px) and (min-resolution: 144dpi) {
+   .image-fallback {
+    background-image: url(../images/apple_hanam_hero_fallback__emcreczwguc2_medium_2x.png);
+  }
+}
+
+@media only screen and (max-width: 734px) {
+   .image-fallback {
+    background-image: url(../images/apple_hanam_hero_fallback__emcreczwguc2_small.png);
+  }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+   .image-fallback {
+    background-image: url(../images/apple_hanam_hero_fallback__emcreczwguc2_small_2x.png);
+  }
+}
+
+ .image-sprite {
+  display: none;
+  opacity: 1;
+  width: 3190px;
+  height: 5490px;
+  background-image: url(../images/apple_hanam_hero__bs65jd6cgzqu_largetall.jpg);
+}
+
+@media only screen and (min-width: 1069px) and (min-height: 776px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1069px) and (min-height: 776px) and (min-resolution: 1.5dppx), only screen and (min-width: 1069px) and (min-height: 776px) and (min-resolution: 144dpi) {
+   .image-sprite {
+    background-image: url(../images/apple_hanam_hero__bs65jd6cgzqu_largetall_2x.jpg);
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+   .image-sprite {
+    width: 2600px;
+    height: 4517px;
+    background-image: url(../images/apple_hanam_hero__bs65jd6cgzqu_medium.jpg);
+  }
+}
+
+@media only screen and (max-width: 1068px) and (min-width: 735px) and (min-height: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-width: 735px) and (min-height: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-width: 735px) and (min-height: 734px) and (min-resolution: 144dpi) {
+   .image-sprite {
+    background-image: url(../images/apple_hanam_hero__bs65jd6cgzqu_medium_2x.jpg);
+  }
+}
+
+@media only screen and (max-width: 734px) {
+   .image-sprite {
+    width: 240px;
+    height: 278px;
+    background-size: 240px 278px;
+    background-image: url(../images/apple_hanam_hero__bs65jd6cgzqu_small.jpg);
+  }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+   .image-sprite {
+    background-image: url(../images/apple_hanam_hero__bs65jd6cgzqu_small_2x.jpg);
+  }
+}
+
+ .image-startframe {
+  display: block;
+  background-image: url(../images/apple_hanam_hero_startframe__e3zqs9wc1cmu_largetall.png);
+}
+
+@media only screen and (min-width: 1069px) and (min-height: 776px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1069px) and (min-height: 776px) and (min-resolution: 1.5dppx), only screen and (min-width: 1069px) and (min-height: 776px) and (min-resolution: 144dpi) {
+   .image-startframe {
+    background-image: url(../images/apple_hanam_hero_startframe__e3zqs9wc1cmu_largetall_2x.png);
+  }
+}
+
+@media only screen and (max-width: 1068px) {
+   .image-startframe {
+    background-image: url(../images/apple_hanam_hero_startframe__e3zqs9wc1cmu_medium.png);
+  }
+}
+
+@media only screen and (max-width: 1068px) and (min-width: 735px) and (min-height: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-width: 735px) and (min-height: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-width: 735px) and (min-height: 734px) and (min-resolution: 144dpi) {
+   .image-startframe {
+    background-image: url(../images/apple_hanam_hero_startframe__e3zqs9wc1cmu_medium_2x.png);
+  }
+}
+
+@media only screen and (max-width: 734px) {
+   .image-startframe {
+    background-image: url(../images/apple_hanam_hero_startframe__e3zqs9wc1cmu_small.png);
+  }
+}
+
+@media only screen and (max-width: 734px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 734px) and (min-resolution: 1.5dppx), only screen and (max-width: 734px) and (min-resolution: 144dpi) {
+   .image-startframe {
+    background-image: url(../images/apple_hanam_hero_startframe__e3zqs9wc1cmu_small_2x.png);
+  }
+}
+
+button {
+  font-size: 17px;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 300;
+  display: none;
+  opacity: 0;
+}
+
+button.show {
+  opacity: 1;
+  display: inline-block;
+}
+
+button:hover {
+  background: #0077ed;
+}
